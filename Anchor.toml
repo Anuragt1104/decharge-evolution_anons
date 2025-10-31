@@ -1,0 +1,18 @@
+[workspace]
+members = ["programs/decharge"]
+
+[toolchain]
+anchor_version = "0.30.1"
+
+[provider]
+cluster = "localnet"
+wallet = "~/.config/solana/id.json"
+
+[programs.localnet]
+decharge = "DeChrg11111111111111111111111111111111111111"
+
+[registry]
+url = "https://api.apr.dev"
+
+[scripts]
+test = "pnpm --filter anchor-tests test"

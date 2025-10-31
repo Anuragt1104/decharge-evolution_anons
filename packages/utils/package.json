@@ -1,0 +1,20 @@
+{
+  "name": "@decharge/utils",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --dts --format esm,cjs --out-dir dist",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "date-fns": "4.1.0"
+  },
+  "devDependencies": {
+    "tsup": "8.1.0",
+    "typescript": "5.6.3",
+    "rimraf": "6.0.1"
+  }
+}
